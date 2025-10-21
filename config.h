@@ -2,7 +2,7 @@
 #define CONFIG_H
 
 // String used to delimit block outputs in the status.
-#define DELIMITER " | "
+#define DELIMITER " "
 
 // Maximum number of Unicode characters that a block can output.
 #define MAX_BLOCK_OUTPUT_LENGTH 45
@@ -11,14 +11,15 @@
 #define CLICKABLE_BLOCKS 1
 
 // Control whether a leading delimiter should be prepended to the status.
-#define LEADING_DELIMITER 1
+#define LEADING_DELIMITER 0
 
 // Control whether a trailing delimiter should be appended to the status.
 #define TRAILING_DELIMITER 1
 
 // Define blocks for the status feed as X(icon, cmd, interval, signal).
 #define BLOCKS(X)             \
-    X("", "/home/rhansen/dev/tools/zig-dwmblocks/zig-out/bin/zig_dwmblocks", 0, 1)  \
+    X("", "/home/rhansen/dev/tools/zig-dwmblocks/zig-out/bin/zig_dwmblocks battery", 1, 0)  \
+    X("| ", "/home/rhansen/dev/tools/zig-dwmblocks/zig-out/bin/zig_dwmblocks time", 1, 0)  \
     // X("", "sb-music", 0, 2)   \
     // X("", "sb-disk", 1800, 3) \
     // X("", "sb-memory", 10, 4) \
