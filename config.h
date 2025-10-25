@@ -19,6 +19,7 @@
 // Define blocks for the status feed as X(icon, cmd, interval, signal).
 #define BLOCKS(X)             \
     X(" ", "/home/rhansen/dev/personal/dotfiles/scripts/volume.sh", 1, 0)  \
+    X("| ", "/home/rhansen/dev/personal/dotfiles/scripts/sensors.sh", 1, 0)  \
     X("| ", "/home/rhansen/dev/tools/zig-dwmblocks/zig-out/bin/zig_dwmblocks battery", 1, 0)  \
     X("| ", "/home/rhansen/dev/tools/zig-dwmblocks/zig-out/bin/zig_dwmblocks time", 1, 0)  \
     // X("", "sb-music", 0, 2)   \
